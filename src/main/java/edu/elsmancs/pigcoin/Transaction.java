@@ -6,8 +6,8 @@ public class Transaction {
 
     private String hash = null;
     private String prevHash = null;
-    private PublicKey pKeySender = null;
-    private PublicKey pKeyReceiver = null;
+    private PublicKey pkeySender = null;
+    private PublicKey pkeyReceiver = null;
     private double pigcoins = 0d;
     private String message = null;
     private byte[] signature = {};
@@ -18,8 +18,8 @@ public class Transaction {
     public Transaction(String hash, String prevHash, PublicKey sender, PublicKey receiver, double pigcoins, String message) {
         this.hash = hash;
         this.prevHash = prevHash;
-        this.pKeySender = sender;
-        this.pKeyReceiver = receiver;
+        this.pkeySender = sender;
+        this.pkeyReceiver = receiver;
         this.pigcoins = pigcoins;
         this.message = message;
     }
@@ -42,11 +42,11 @@ public class Transaction {
     }
 
     public PublicKey getPKeySender() {
-        return pKeySender;
+        return pkeySender;
     }
 
     public PublicKey getPKeyReceiver() {
-        return pKeyReceiver;
+        return pkeyReceiver;
     }
 
     public double getPigcoins() {
