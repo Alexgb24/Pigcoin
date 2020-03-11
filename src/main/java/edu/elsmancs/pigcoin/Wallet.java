@@ -145,7 +145,6 @@ public class Wallet {
             }
 
         }
-        // getInputTransactions().removeAll(consumedCoins);
         return collectedCoins;
     }
 
