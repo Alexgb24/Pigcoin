@@ -45,11 +45,11 @@ public class Transaction {
         return pkeySender;
     }
 
-    public PublicKey getPKeyReceiver() {
+    public PublicKey get_PK_Recipient() {
         return pkeyReceiver;
     }
 
-    public double getPigcoins() {
+    public double getPigCoins() {
         return pigcoins;
     }
 
@@ -57,14 +57,15 @@ public class Transaction {
         return message;
     }
 
+
     @Override
     public String toString() {
 
         return "\n" + "Hash = " + getHash() + "\n" +
                 "Prev_hash = " + getPrevHash() + "\n" +
                 "pKey_sender = " + getPKeySender().hashCode() + "\n" +
-                "pKey_recipient = " + getPKeyReceiver().hashCode() + "\n" +
-                "pigcoins = " + getPigcoins() + "\n" +
+                "pKey_recipient = " + get_PK_Recipient().hashCode() + "\n" +
+                "pigcoins = " + getPigCoins() + "\n" +
                 "message = " + getMessage() + "\n";
     }
 
